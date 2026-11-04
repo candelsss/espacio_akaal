@@ -27,7 +27,7 @@
 
     .terapia-galeria{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: start;
         gap: 3rem;
     }
@@ -69,6 +69,10 @@
 
 @media (min-width: 821px) {
     .cta{
+        padding-top: 4rem;
+    }
+
+    .conecta{
         display: none;
     }
 }

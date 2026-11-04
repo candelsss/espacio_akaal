@@ -4,6 +4,7 @@ import { useState } from 'react'
 import {Masaje} from './components/Masaje'
 import {Seguimiento} from './components/Seguimiento'
 import { Acompanamiento } from './components/Acompanamiento'
+import { Reiki } from './components/Reiki'
 import WhatsappLink from '../../components/whatsapp-link/WhatsappLink'
 import { Footer } from '../../components/footer/Footer'
 
@@ -33,13 +34,14 @@ const TerapiasHolisticas = () => {
         <>
        
         <main className='main'>
-        <h2>Terapias holísticas</h2>
+        <h1>Terapias holísticas</h1>
         <p className="terapia-descripcion"><strong>La terapia holística</strong> es un enfoque de bienestar que trata a la persona como un todo integrado,<strong> conectando el cuerpo, la mente y las emociones </strong>en lugar de enfocarse únicamente en el síntoma aislado.</p>
         
 
         <ul className="terapia-galeria">
 
             <li className="terapia-item"><Masaje isOpen={openItems.has('masaje')} onToggle={() => toggleItem('masaje')} /></li>
+            <li className="terapia-item"><Reiki isOpen={openItems.has('reiki')} onToggle={() => toggleItem('reiki')} /></li>
             <li className="terapia-item"><Acompanamiento isOpen={openItems.has('acompanamiento')} onToggle={() => toggleItem('acompanamiento')} /></li>
             <li className="terapia-item"><Seguimiento isOpen={openItems.has('seguimiento')} onToggle={() => toggleItem('seguimiento')} /></li>
 

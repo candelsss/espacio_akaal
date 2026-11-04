@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight, MapPin, Heart, Compass, Flower } from 'lucide-react'
 import './acerca-de.css'
@@ -7,6 +7,7 @@ const About = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [direction, setDirection] = useState(0)
 
+ 
   const timeline = [
     {
       year: "2013",
@@ -85,6 +86,7 @@ const About = () => {
 
       {/* TIMELINE */}
       <section className="timeline-section">
+        
         <div className="timeline-header animate-child">
           <h2>El viaje que me transformó</h2>
           <p>Una travesía interior entre viaje, yoga y creación.</p>
@@ -97,10 +99,10 @@ const About = () => {
                 key={currentSlide}
                 className="timeline-slide"
                 custom={direction}
-                initial={{ opacity: 0, x: direction > 0 ? 60 : -60 }}
+                initial={{ opacity: 0, x: direction > 0 ? 100 : -100 }}
                 animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: direction > 0 ? -60 : 60 }}
-                transition={{ duration: 0.45, ease: "easeInOut" }}
+                exit={{ opacity: 0, x: direction > 0 ? -100 : 100 }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
               >
                 <div className="slide-image-container">
                   <img
@@ -111,7 +113,12 @@ const About = () => {
                 </div>
                 <div className="slide-content">
                   <div className="slide-text">
-                    <div className="slide-header">
+                    <motion.div 
+                      className="slide-header"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                    >
                       <div className="slide-icon">
                         {timeline[currentSlide].icon}
                       </div>
@@ -119,10 +126,15 @@ const About = () => {
                         <span className="slide-year">{timeline[currentSlide].year}</span>
                         <p className="slide-title">{timeline[currentSlide].title}</p>
                       </div>
-                    </div>
-                    <p className="slide-description">
+                    </motion.div>
+                    <motion.p 
+                      className="slide-description"
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.5, delay: 0.4 }}
+                    >
                       {timeline[currentSlide].content}
-                    </p>
+                    </motion.p>
                   </div>
                 </div>
               </motion.div>

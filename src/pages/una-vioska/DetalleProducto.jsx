@@ -152,7 +152,7 @@ const DetalleProducto = () => {
                             </div>
 
                             <div className="producto-info">
-                                <h2>{producto.nombre}</h2>
+                                <h1>{producto.nombre}</h1>
                                 <p className="precio">{producto.precio} €</p>
 
                                 <div className="producto-descripcion">

@@ -262,7 +262,7 @@ const UnaVioska = () => {
                     />
 
                     <div className="galeria-header-sticky">
-                        <h2 className="galeria-titulo">Encuentra <br /> tu joya</h2>
+                        <h2 className="galeria-titulo">Joyas creadas <br/> con propósito</h2>
                         <div className="modo-seleccion-container">
                             <div className="seleccion-multiple-container">
                                 <p className="seleccion-titulo">
