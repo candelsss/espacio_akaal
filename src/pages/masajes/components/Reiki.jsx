@@ -1,8 +1,21 @@
 
 
 import './styles.css'
+import WhatsappLink from '../../../components/whatsapp-link/WhatsappLink'
 
-const necesidades = ['Problemas de sueño y tensión', 'Estrés y sobrecarga', 'Inestabilidad emocional', 'Molestias físicas y recuperación']
+const acompana = [
+  { titulo: 'Insomnio y tensión', detalle: 'dificultad para dormir, bruxismo o inquietud.' },
+  { titulo: 'Ansiedad y estrés', detalle: 'sobrecarga mental o sensación de estar "al límite".' },
+  { titulo: 'Altibajos emocionales', detalle: 'necesidad de recuperar la calma y tu centro.' },
+  { titulo: 'Molestias físicas', detalle: 'dolores persistentes (migrañas, lumbares) y recuperación (cicatrices, lesiones).' },
+]
+
+const beneficios = [
+  { titulo: 'Relajación profunda', detalle: 'reducción inmediata del ritmo cardíaco y mental.' },
+  { titulo: 'Alivio integral', detalle: 'liberación de tensiones físicas y emocionales.' },
+  { titulo: 'Claridad y centro', detalle: 'sensación de estabilidad y paz interior.' },
+  { titulo: 'Equilibrio orgánico', detalle: 'apoyo al sistema inmunitario y a la vitalidad.' },
+]
 
 const tarifas = [
   { label: '1ª sesión', detalle: 'Toma de contacto y valoración · 75 min', precio: '65€' },
@@ -11,6 +24,8 @@ const tarifas = [
   { label: 'Sesión de mantenimiento', detalle: 'Tras el primer tratamiento, sin bono', precio: '50€' },
   { label: 'Sesión suelta', detalle: 'Fuera de tratamiento', precio: '60€' },
 ]
+
+const sesionSuelta = tarifas.find((t) => t.label === 'Sesión suelta')
 
 export const Reiki = ({ isOpen, onToggle }) => {
 
@@ -39,26 +54,38 @@ export const Reiki = ({ isOpen, onToggle }) => {
 
         <div className={`acordeon-wrapper ${isOpen ? 'acordeon-wrapper-open' : ''}`}>
           <div className="acordeon-contenido">
-            <p>El Reiki es una técnica natural de armonización, reconocida por la <strong>OMS</strong> como terapia complementaria y totalmente compatible con cualquier tratamiento médico.</p>
-            <p>A través de una suave colocación de manos, actúa como un canal limpio que ayuda a <strong>deshacer bloqueos energéticos</strong> que a veces se somatizan en forma de dolor, estrés o fatiga.</p>
+            <p>Técnica natural de armonización reconocida por la <strong>OMS</strong> como terapia complementaria y compatible con cualquier tratamiento médico. A través de la sesión, facilito el flujo de la energía para ayudarte a liberar bloqueos que se manifiestan de múltiples formas en el cuerpo y la mente.</p>
 
-            <p>Te puede acompañar especialmente si atraviesas:</p>
+            <p><strong>¿En qué te acompaña?</strong></p>
             <ul className='necesidades-ul'>
-              {necesidades.map((n) => (
-                <li key={n} className='necesidades-li'> <span className="icono-li"><img src="/img/star.png" alt="necesidades-reiki" className="imagen-li" /></span>{n}</li>
+              {acompana.map((a) => (
+                <li key={a.titulo} className='necesidades-li necesidades-li-detalle'> <span className="icono-li"><img src="/img/star.png" alt="necesidades-reiki" className="imagen-li" /></span><span><strong>{a.titulo}:</strong> {a.detalle}</span></li>
+              ))}
+            </ul>
+
+            <p><strong>Beneficios</strong></p>
+            <ul className='necesidades-ul'>
+              {beneficios.map((b) => (
+                <li key={b.titulo} className='necesidades-li necesidades-li-detalle'> <span className="icono-li"><img src="/img/star.png" alt="beneficios-reiki" className="imagen-li" /></span><span><strong>{b.titulo}:</strong> {b.detalle}</span></li>
               ))}
             </ul>
 
             <p>La sesión se realiza tumbada o sentada, con ropa habitual, mediante contacto suave o a distancia según tu preferencia. Solo tienes que relajarte y recibir.</p>
 
             <div className="precios-lista">
-              {tarifas.map((t) => (
-                <div key={t.label} className={`precio-fila ${t.destacada ? 'precio-fila-destacada' : ''}`}>
-                  <p className="precio-label">{t.label}<span>{t.detalle}</span></p>
-                  <p className="precio-valor">{t.precio}</p>
-                </div>
-              ))}
+              <div className="precio-fila">
+                <p className="precio-label">{sesionSuelta.label}<span>{sesionSuelta.detalle}</span></p>
+                <p className="precio-valor">{sesionSuelta.precio}</p>
+              </div>
             </div>
+
+            <WhatsappLink
+              message="Hola, me gustaría recibir información sobre las tarifas y bonos de Reiki"
+              variant="noOutlined"
+              className="precio-cta"
+            >
+              Más información sobre tarifas y bonos
+            </WhatsappLink>
           </div>
         </div>
 

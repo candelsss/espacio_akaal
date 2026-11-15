@@ -3,7 +3,7 @@
 
 import './styles.css'
 
-const recursos = ['Técnicas de liberación miofascial', 'Hamacados', 'Movilizaciones articulares', 'Maniobras insppiradas en el masaje Lomi, Lomi']
+const recursos = ['Quiromasaje y técnicas manuales específicas', 'Técnicas de liberación miofascial', 'Estiramientos con técnica de FNP (Facilitación Neuromuscular Propioceptiva)', 'Aplicación de kinesiotape']
 
 
 export const Masaje = ({ isOpen, onToggle }) => {
@@ -13,12 +13,15 @@ export const Masaje = ({ isOpen, onToggle }) => {
           <div className="acordeon">
 
 <div className="acordeon-desktop-header">
-  <p className="acordeon-titulo-desktop"><strong>Masaje <br /> Californiano</strong></p>
-  <p className="acordeon-descripcion-desktop">Movimientos envolventes y un contacto consciente que invitan a soltar, respirar y reconectar contigo.</p>
+  <p className="acordeon-titulo-desktop">
+    <strong>Tratamiento manual <br /> descontracturante</strong>
+    <span className="acordeon-subtitulo-desktop">Abordaje de lesiones</span>
+  </p>
+  <p className="acordeon-descripcion-desktop">Alivia tensiones musculares, mejora la movilidad y acompaña la recuperación de lesiones.</p>
 </div>
 
 <div className="acordeon-header" onClick={onToggle}>
-  <p className="acordeon-nombre"><strong>Masaje Californiano</strong></p>
+  <p className="acordeon-nombre"><strong>Tratamiento manual descontracturante y abordaje de lesiones</strong></p>
   <span className="acordeon-icono">
     <img
       src={isOpen ? "/img/up.png" : "/img/down.png"}
@@ -31,20 +34,19 @@ export const Masaje = ({ isOpen, onToggle }) => {
 <div className={`acordeon-wrapper ${isOpen ? 'acordeon-wrapper-open' : ''}`}>
   <div className="acordeon-contenido">
 
-<p>Un masaje profundamente relajante y envolvente, favoreciendo la liberación de tensiones físicas y emocionales.</p>
-<p>Através de movimientos fluidos y continuos, estiramientos suaves y un contacto respetuoso se promueve un estado de descanso profundo, conexión y bienestar integral.</p>
-<p>La sesión puede combinar distintos recursos como:</p>
+<p>Tratamiento manual personalizado para aliviar tensiones musculares, trabajar las restricciones de movilidad y acompañar los procesos de recuperación de determinadas lesiones.</p>
+<p>Cada sesión se adapta a las necesidades de la persona, teniendo en cuenta la zona afectada, las características de las molestias y su evolución.</p>
 
 <ul className='necesidades-ul'>
               {recursos.map((r) => (
-                <li key={r} className='necesidades-li'> <span className="icono-li"><img src="/img/star.png" alt="recursos-masaje-californiano" className="imagen-li" /></span>{r}</li>
+                <li key={r} className='necesidades-li necesidades-li-detalle'> <span className="icono-li"><img src="/img/star.png" alt="recursos-tratamiento-descontracturante" className="imagen-li" /></span>{r}</li>
               ))}
             </ul>
 
 
       <div className="acordeon-precio">
-        <p className="tiempo">75 min.</p>
-        <p className="precio">60€</p>
+        <p className="tiempo">60 min.</p>
+        <p className="precio">55€</p>
       </div>
     </div>
 </div>

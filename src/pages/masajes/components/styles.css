@@ -56,8 +56,18 @@
     gap: 0.5rem;
 }
 
+.necesidades-li-detalle{
+    align-items: flex-start;
+    font-weight: 400;
+}
+
+.necesidades-li-detalle .icono-li{
+    margin-top: 0.2rem;
+}
+
 .icono-li{
     width: 24px;
+    flex-shrink: 0;
 }
 
 
@@ -135,6 +145,14 @@
 .precio-fila-destacada .precio-label,
 .precio-fila-destacada .precio-valor{
     font-weight: 700;
+}
+
+.precio-cta{
+    display: inline-flex;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
 }
 
 

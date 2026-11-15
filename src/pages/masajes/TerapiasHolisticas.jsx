@@ -5,6 +5,7 @@ import {Masaje} from './components/Masaje'
 import {Seguimiento} from './components/Seguimiento'
 import { Acompanamiento } from './components/Acompanamiento'
 import { Reiki } from './components/Reiki'
+import { Coaching } from './components/Coaching'
 import WhatsappLink from '../../components/whatsapp-link/WhatsappLink'
 import { Footer } from '../../components/footer/Footer'
 
@@ -44,6 +45,7 @@ const TerapiasHolisticas = () => {
             <li className="terapia-item"><Reiki isOpen={openItems.has('reiki')} onToggle={() => toggleItem('reiki')} /></li>
             <li className="terapia-item"><Acompanamiento isOpen={openItems.has('acompanamiento')} onToggle={() => toggleItem('acompanamiento')} /></li>
             <li className="terapia-item"><Seguimiento isOpen={openItems.has('seguimiento')} onToggle={() => toggleItem('seguimiento')} /></li>
+            <li className="terapia-item"><Coaching isOpen={openItems.has('coaching')} onToggle={() => toggleItem('coaching')} /></li>
 
         </ul>
 
