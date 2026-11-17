@@ -41,6 +41,11 @@ export const Seguimiento = ({ isOpen, onToggle }) => {
                         <p>Sesiones pensadas para dar continuidad a tu proceso terapéutico, acompañando de forma cercana y personalizada la evolución de cada persona.</p>
                         <p>Recomendadas cuando ya se ha realizado una valoración inicial y se busca reajustar o reforzar el tratamiento, consolidando los cambios logrados y manteniendo el bienestar en el tiempo.</p>
 
+                        <div className="acordeon-precio">
+                            <p className="tiempo">35 min.</p>
+                            <p className="precio">30€</p>
+                        </div>
+
                     </div>
                 </div>
 

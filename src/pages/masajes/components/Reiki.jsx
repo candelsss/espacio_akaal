@@ -1,7 +1,7 @@
 
 
 import './styles.css'
-import WhatsappLink from '../../../components/whatsapp-link/WhatsappLink'
+import { BonosCta } from './BonosCta'
 
 const acompana = [
   { titulo: 'Insomnio y tensión', detalle: 'dificultad para dormir, bruxismo o inquietud.' },
@@ -79,13 +79,7 @@ export const Reiki = ({ isOpen, onToggle }) => {
               </div>
             </div>
 
-            <WhatsappLink
-              message="Hola, me gustaría recibir información sobre las tarifas y bonos de Reiki"
-              variant="noOutlined"
-              className="precio-cta"
-            >
-              Más información sobre tarifas y bonos
-            </WhatsappLink>
+            <BonosCta mensaje="Hola, quiero más información sobre los bonos de Reiki, armonización y equilibrio energético" />
           </div>
         </div>
 

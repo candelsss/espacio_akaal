@@ -6,7 +6,6 @@ import {Seguimiento} from './components/Seguimiento'
 import { Acompanamiento } from './components/Acompanamiento'
 import { Reiki } from './components/Reiki'
 import { Coaching } from './components/Coaching'
-import WhatsappLink from '../../components/whatsapp-link/WhatsappLink'
 import { Footer } from '../../components/footer/Footer'
 
 const TerapiasHolisticas = () => {
@@ -51,12 +50,6 @@ const TerapiasHolisticas = () => {
 
 
         <div className="cta">
-
-            <div className="cta-contacto">
-                <p className="">Si te interesa profundizar, contáctame</p>
-                <div className="cta-btn">
-                <WhatsappLink message='¡Hola! Me gustaría tener más información sobre las terapias holísticas'>MÁS INFORMACIÓN</WhatsappLink></div>
-            </div>
             <img src="/img/conecta.png" alt="cta" className="conecta" />
         </div>
         </main>

@@ -1,6 +1,7 @@
 
 
 import './styles.css'
+import { BonosCta } from './BonosCta'
 
 const brujula = [
   { titulo: 'La linterna', detalle: 'para iluminar tus opciones cuando sientas falta de claridad.' },
@@ -65,6 +66,8 @@ export const Coaching = ({ isOpen, onToggle }) => {
               <p className="tiempo">60 min.</p>
               <p className="precio">60€</p>
             </div>
+
+            <BonosCta mensaje="Hola, quiero más información sobre los bonos de Coaching con PNL, desarrollo y claridad mental" />
           </div>
         </div>
 

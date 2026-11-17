@@ -2,6 +2,7 @@
 
 
 import './styles.css'
+import { BonosCta } from './BonosCta'
 
 const recursos = ['Quiromasaje y técnicas manuales específicas', 'Técnicas de liberación miofascial', 'Estiramientos con técnica de FNP (Facilitación Neuromuscular Propioceptiva)', 'Aplicación de kinesiotape']
 
@@ -48,6 +49,8 @@ export const Masaje = ({ isOpen, onToggle }) => {
         <p className="tiempo">60 min.</p>
         <p className="precio">55€</p>
       </div>
+
+      <BonosCta mensaje="Hola, quiero más información sobre los bonos del tratamiento manual descontracturante y abordaje de lesiones" />
     </div>
 </div>
 

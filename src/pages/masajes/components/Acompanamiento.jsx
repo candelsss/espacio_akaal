@@ -1,6 +1,7 @@
 
 
 import './styles.css'
+import { BonosCta } from './BonosCta'
 
 const necesidades = ['Estrés y ansiedad', 'Cansancio e insomnio', 'Lesiones', 'Lumbalgias', ' Tratamiento de cicatrices', 'Contracturas', 'Alteraciones del ciclo menstrual']
 
@@ -63,6 +64,8 @@ export const Acompanamiento = ({ isOpen, onToggle }) => {
                 <p className="tiempo">60 min.</p>
                 <p className="precio">45€</p>
               </div>
+
+              <BonosCta mensaje="Hola, quiero más información sobre los bonos de Acompañamiento terapéutico, con base en medicina tradicional china" />
           </div>
         </div>
 
