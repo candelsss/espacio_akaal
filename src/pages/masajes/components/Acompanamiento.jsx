@@ -66,7 +66,7 @@ export const Acompanamiento = ({ isOpen, onToggle }) => {
               </div>
 
               <BonosCta
-                mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+                mensaje="¡Hola! Me gustaría reservar una sesión de Acompañamiento terapéutico contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
                 telefono="34633098076"
               />
           </div>

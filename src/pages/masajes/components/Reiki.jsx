@@ -80,7 +80,7 @@ export const Reiki = ({ isOpen, onToggle }) => {
             </div>
 
             <BonosCta
-              mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+              mensaje="¡Hola! Me gustaría reservar una sesión de Reiki contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
               telefono="34615840306"
             />
           </div>

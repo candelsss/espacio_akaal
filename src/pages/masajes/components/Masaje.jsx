@@ -51,7 +51,7 @@ export const Masaje = ({ isOpen, onToggle }) => {
       </div>
 
       <BonosCta
-        mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+        mensaje="¡Hola! Me gustaría reservar una sesión de Tratamiento manual descontracturante contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
         telefono="34633098076"
       />
     </div>

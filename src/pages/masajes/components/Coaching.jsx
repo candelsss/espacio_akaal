@@ -68,7 +68,7 @@ export const Coaching = ({ isOpen, onToggle }) => {
             </div>
 
             <BonosCta
-              mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+              mensaje="¡Hola! Me gustaría reservar una sesión de Coaching con PNL contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
               telefono="34615840306"
             />
           </div>
