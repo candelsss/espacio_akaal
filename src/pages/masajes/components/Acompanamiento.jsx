@@ -65,7 +65,10 @@ export const Acompanamiento = ({ isOpen, onToggle }) => {
                 <p className="precio">45€</p>
               </div>
 
-              <BonosCta mensaje="Hola, quiero más información sobre los bonos de Acompañamiento terapéutico, con base en medicina tradicional china" />
+              <BonosCta
+                mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+                telefono="34633098076"
+              />
           </div>
         </div>
 

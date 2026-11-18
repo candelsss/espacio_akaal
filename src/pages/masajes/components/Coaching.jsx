@@ -67,7 +67,10 @@ export const Coaching = ({ isOpen, onToggle }) => {
               <p className="precio">60€</p>
             </div>
 
-            <BonosCta mensaje="Hola, quiero más información sobre los bonos de Coaching con PNL, desarrollo y claridad mental" />
+            <BonosCta
+              mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+              telefono="34615840306"
+            />
           </div>
         </div>
 

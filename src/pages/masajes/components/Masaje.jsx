@@ -50,7 +50,10 @@ export const Masaje = ({ isOpen, onToggle }) => {
         <p className="precio">55€</p>
       </div>
 
-      <BonosCta mensaje="Hola, quiero más información sobre los bonos del tratamiento manual descontracturante y abordaje de lesiones" />
+      <BonosCta
+        mensaje="¡Hola! Me gustaría reservar una sesión contigo en Espacio AKAAL, ¿podrías contarme un poco más?"
+        telefono="34633098076"
+      />
     </div>
 </div>
 
